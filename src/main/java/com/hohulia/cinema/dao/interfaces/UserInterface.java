@@ -1,6 +1,9 @@
 package com.hohulia.cinema.dao.interfaces;
 
 import com.hohulia.cinema.entities.*;
+import com.hohulia.cinema.exceptions.ServiceException;
+
+import java.sql.SQLException;
 import java.util.List;
 
 public interface UserInterface {
@@ -9,5 +12,7 @@ public interface UserInterface {
     List<User> findAll();
     void createUser(User user);
     void deleteById(long id);
-
+    void beginTransaction() throws SQLException;
+    void endTransaction() throws SQLException;
+    void rollbackTransaction() throws SQLException;
 }

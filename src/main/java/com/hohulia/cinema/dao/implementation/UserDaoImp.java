@@ -2,6 +2,8 @@ package com.hohulia.cinema.dao.implementation;
 
 import com.hohulia.cinema.dao.interfaces.UserInterface;
 import com.hohulia.cinema.entities.User;
+import com.hohulia.cinema.exceptions.ServiceException;
+import com.hohulia.cinema.utilities.Utils;
 
 import java.sql.Connection;
 import java.sql.*;
@@ -36,6 +38,20 @@ public class UserDaoImp implements UserInterface {
         String email = resultSet.getString(COLUMN.EMAIL.NAME);
         String password = resultSet.getString(COLUMN.PASSWORD.NAME);
         return new User(id, email, password);
+    }
+    @Override
+    public void beginTransaction() throws SQLException {
+        connection.setAutoCommit(false);
+    }
+    @Override
+    public void endTransaction() throws SQLException {
+        connection.commit();
+        connection.setAutoCommit(true);
+    }
+    @Override
+    public void rollbackTransaction() throws SQLException {
+        connection.rollback();
+        connection.setAutoCommit(true);
     }
 
     @Override
@@ -103,7 +119,7 @@ public class UserDaoImp implements UserInterface {
 
         try (PreparedStatement stmt = connection.prepareStatement(createUser)) {
             stmt.setString(1, user.getEmail());
-            stmt.setString(2, user.getPassword());
+            stmt.setString(2, Utils.hashPassword(user.getPassword()));
             stmt.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

@@ -1,0 +1,25 @@
+INSERT INTO `cinema`.`movie` (`duration`, `title`, `description`) VALUES ('02:55:00', 'The Godfather', 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.');
+INSERT INTO `cinema`.`movie` (`duration`, `title`, `description`) VALUES ('02:28:00', 'Inception', 'A skilled thief is hired to steal information from the minds of people while they are sleeping');
+INSERT INTO `cinema`.`movie` (`duration`, `title`, `description`) VALUES ('02:32:00', 'The Dark Knight', 'Batman forms an alliance with a police lieutenant and a district attorney in order to take down a menacing criminal known as \"The Joker\".');
+INSERT INTO `cinema`.`movie` (`duration`, `title`, `description`) VALUES ('02:22:00', 'Forrest Gump', 'A simple man with a low IQ goes on extraordinary adventures, meeting historical figures, influencing popular culture, and experiencing firsthand historic events of the late 20th century.');
+INSERT INTO `cinema`.`movie` (`duration`, `title`, `description`) VALUES ('02:22:00', 'The Shawshank Redemption', 'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.');
+
+INSERT INTO `cinema`.`сinema_hall` (`hall_id`, `cinema_id`, `seats_rows`, `seats_columns`) VALUES ('1', '1', '6', '6');
+
+INSERT INTO `cinema`.`schedule` (`movie_id`, `hall_id`, `start_time`, `end_time`)
+VALUES
+    (41, 1, '2023-04-02 09:00:00', '2023-04-02 11:55:00'),
+    (42, 1, '2023-04-02 12:05:00', '2023-04-02 14:33:00'),
+    (43, 1, '2023-04-02 14:45:00', '2023-04-02 17:17:00'),
+    (44, 1, '2023-04-02 17:30:00', '2023-04-02 19:52:00'),
+    (45, 1, '2023-04-02 20:05:00', '2023-04-02 22:27:00'),
+    (41, 1, '2023-04-03 09:00:00', '2023-04-03 11:55:00'),
+    (42, 1, '2023-04-03 12:05:00', '2023-04-03 14:33:00'),
+    (43, 1, '2023-04-03 14:45:00', '2023-04-03 17:17:00'),
+    (44, 1, '2023-04-03 17:30:00', '2023-04-03 19:52:00'),
+    (45, 1, '2023-04-03 20:05:00', '2023-04-03 22:27:00'),
+    (41, 1, '2023-04-04 09:00:00', '2023-04-04 11:55:00'),
+    (42, 1, '2023-04-04 12:05:00', '2023-04-04 14:33:00'),
+    (43, 1, '2023-04-04 14:45:00', '2023-04-04 17:17:00'),
+    (44, 1, '2023-04-04 17:30:00', '2023-04-04 19:52:00'),
+    (45, 1, '2023-04-04 20:05:00', '2023-04-04 22:27:00');

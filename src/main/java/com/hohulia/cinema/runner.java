@@ -1,15 +1,17 @@
 package com.hohulia.cinema;
 
 import com.hohulia.cinema.connection.DBCPDataSource;
-import com.hohulia.cinema.dao.implementation.MovieDaoImp;
-import com.hohulia.cinema.dao.implementation.RoleDaoImp;
-import com.hohulia.cinema.dao.implementation.UserDaoImp;
-import com.hohulia.cinema.dao.implementation.UserRoleDaoImp;
-import com.hohulia.cinema.entities.Movie;
-import com.hohulia.cinema.entities.Role;
-import com.hohulia.cinema.entities.User;
-import com.hohulia.cinema.entities.UserRole;
-import com.hohulia.cinema.ulilities.Hash;
+import com.hohulia.cinema.dao.implementation.*;
+import com.hohulia.cinema.entities.*;
+import com.hohulia.cinema.utilities.TimeConvertor;
+import com.hohulia.cinema.utilities.Utils;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.util.TimeZone;
+import java.sql.Time;
+
 
 import java.sql.*;
 import java.util.List;
@@ -25,7 +27,7 @@ public class runner {
                 UserRoleDaoImp userRoleCon = new UserRoleDaoImp(DBCPDataSource.getConnection());
 
                 // Create user
-                userCon.createUser(new User("delete@gmail.com", Hash.hashPassword("1111")));
+                //userCon.createUser(new User("delete@gmail.com", "1111"));
 
                 // Find user by email
                 System.out.println("\nFind by email");
@@ -34,7 +36,7 @@ public class runner {
                 System.out.println(user);
 
                 // Add role
-                userRoleCon.addUserRole(new UserRole(idToDel, 2));
+                //userRoleCon.addUserRole(new UserRole(idToDel, 2));
 
                 // Find user by user_id
                 System.out.println("\nFind by user_id");
@@ -61,13 +63,13 @@ public class runner {
 
 
                 // Try delete
-                try {
+/*                try {
                     userRoleCon.deleteById(idToDel);
                     new java.util.Scanner(System.in).nextLine();
                     userCon.deleteById(idToDel);
                 } catch (RuntimeException ex){
                     ex.printStackTrace();
-                }
+                }*/
 
 
                 // Get all userRoles
@@ -113,6 +115,23 @@ public class runner {
                 for (Movie m: movies)
                     System.out.println(m);
 
+
+                movie = movies.get(0);
+                Time time = movie.getDuration();
+                System.out.println(time);//07:52:00
+
+                System.out.println("<><><><><><>");
+                LocalDateTime dt = LocalDateTime.now();
+                System.out.println(dt);
+                Timestamp sqlTime = Timestamp.valueOf(TimeConvertor.toSqlString(dt));
+                Timestamp endTime = Timestamp.valueOf("2023-04-01 19:00:00");
+                ScheduleDaoImp scheduleDaoImp = new ScheduleDaoImp(DBCPDataSource.getConnection());
+                System.out.println(sqlTime + " " + endTime);
+                List <Schedule> list = scheduleDaoImp.findByStartTimeBorders(sqlTime, endTime);
+                System.out.println(list);
+                for (Schedule el: list){
+                    System.out.println(el);
+                }
 
             } catch (Exception exception) {
                 throw new RuntimeException(exception);

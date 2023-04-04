@@ -11,5 +11,6 @@ public interface MovieInterface {
     void addMovie(Movie movie);
     void deleteById(long id);
     void deleteByTitle(String title);
-
+    List<Movie> findMoviesWithOffsetAndLimit(int offset, int limit);
+    int countRows();
 }

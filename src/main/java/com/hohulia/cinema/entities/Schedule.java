@@ -7,18 +7,18 @@ public class Schedule
     private long showId;
     private int movieId;
     private int hallId;
-    private java.sql.Date startTime;
-    private java.sql.Date endTime;
+    private java.sql.Timestamp startTime;
+    private java.sql.Timestamp endTime;
 
     public Schedule(){}
-    public Schedule(int MovieId,int HallId,java.sql.Date StartTime,java.sql.Date EndTime)
+    public Schedule(int MovieId,int HallId,java.sql.Timestamp StartTime,java.sql.Timestamp EndTime)
     {
         this.movieId = MovieId;
         this.hallId = HallId;
         this.startTime = StartTime;
         this.endTime = EndTime;
     }
-    public Schedule(long ShowId,int MovieId,int HallId,java.sql.Date StartTime,java.sql.Date EndTime)
+    public Schedule(long ShowId,int MovieId,int HallId,java.sql.Timestamp StartTime,java.sql.Timestamp EndTime)
     {
         this.showId = ShowId;
         this.movieId = MovieId;
@@ -51,19 +51,19 @@ public class Schedule
     {
         hallId = value;
     }
-    public java.sql.Date getStartTime()
+    public java.sql.Timestamp getStartTime()
     {
         return startTime;
     }
-    public void setStartTime(java.sql.Date value)
+    public void setStartTime(java.sql.Timestamp value)
     {
         startTime = value;
     }
-    public java.sql.Date getEndTime()
+    public java.sql.Timestamp getEndTime()
     {
         return endTime;
     }
-    public void setEndTime(java.sql.Date value)
+    public void setEndTime(java.sql.Timestamp value)
     {
         endTime = value;
     }

@@ -35,6 +35,21 @@ public class UserRoleDaoImp implements UserRoleInterface {
         int roleId = resultSet.getInt(COLUMN.ROLE_ID.NAME);
         return new UserRole(userId, roleId);
     }
+    @Override
+    public void beginTransaction() throws SQLException {
+        connection.setAutoCommit(false);
+    }
+    @Override
+    public void endTransaction() throws SQLException {
+        connection.commit();
+        connection.setAutoCommit(true);
+    }
+
+    @Override
+    public void rollbackTransaction() throws SQLException {
+        connection.rollback();
+        connection.setAutoCommit(true);
+    }
 
     @Override
     public UserRole findRoleByUserId(long id) {

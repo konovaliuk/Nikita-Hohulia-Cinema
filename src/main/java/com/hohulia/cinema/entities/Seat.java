@@ -7,22 +7,34 @@ public class Seat
     private long seatId;
     private long bookingId;
     private int seatPrice;
+    private long showId;
+    private int row;
+    private int number;
 
     public Seat(){}
-    public Seat(long SeatId,long BookingId,int SeatPrice)
+    public Seat(int row, int number, long BookingId, int SeatPrice, long ShowId)
     {
-        this.seatId = SeatId;
+        this.row =row;
+        this.number = number;
         this.bookingId = BookingId;
         this.seatPrice = SeatPrice;
+        this.showId = ShowId;
+    }
+    public Seat(long seatId, int row, int number, long BookingId, int SeatPrice, long ShowId)
+    {
+        this.seatId = seatId;
+        this.row =row;
+        this.number = number;
+        this.bookingId = BookingId;
+        this.seatPrice = SeatPrice;
+        this.showId = ShowId;
     }
 
-    public long getSeatId()
-    {
+    public long getSeatId() {
         return seatId;
     }
-    public void setSeatId(long value)
-    {
-        seatId = value;
+    public void setSeatId(long seatId) {
+        this.seatId = seatId;
     }
     public long getBookingId()
     {
@@ -40,27 +52,49 @@ public class Seat
     {
         seatPrice = value;
     }
-
+    public long getShowId()
+    {
+        return showId;
+    }
+    public void setShowId(long value)
+    {
+        showId = value;
+    }
+    public int getRow() {
+        return row;
+    }
+    public void setRow(int row) {
+        this.row = row;
+    }
+    public int getNumber() {
+        return number;
+    }
+    public void setNumber(int number) {
+        this.number = number;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Seat seat = (Seat) o;
-        return getSeatId() == seat.getSeatId() && getBookingId() == seat.getBookingId() && getSeatPrice() == seat.getSeatPrice();
+        return getSeatId()==seat.getSeatId() && getRow() == seat.getRow() && getBookingId() == seat.getBookingId() && getSeatPrice() == seat.getSeatPrice() && getShowId() == seat.getShowId() && getNumber() == seat.getNumber();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getSeatId(), getBookingId(), getSeatPrice());
+        return Objects.hash(getSeatId(), getRow(), getBookingId(), getSeatPrice(), getShowId(), getNumber());
     }
 
     @Override
     public String toString() {
         return "Seat{" +
                 "seatId=" + seatId +
+                ", row=" + row +
+                ", number=" + number +
                 ", bookingId=" + bookingId +
                 ", seatPrice=" + seatPrice +
+                ", showId=" + showId +
                 '}';
     }
 }

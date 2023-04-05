@@ -23,6 +23,7 @@ com\hohulia\cinema\utilities\Utils.class
 com\hohulia\cinema\dao\implementation\ScheduleDaoImp.class
 com\hohulia\cinema\dao\implementation\RoleDaoImp.class
 com\hohulia\cinema\commands\ExecutePaymentCommand.class
+com\hohulia\cinema\services\CheckoutService.class
 com\hohulia\cinema\commands\SignUpCommand.class
 com\hohulia\cinema\dao\interfaces\ScheduleInterface.class
 com\hohulia\cinema\commands\MainPageCommand.class
@@ -55,6 +56,7 @@ com\hohulia\cinema\commands\CheckoutCommand.class
 com\hohulia\cinema\dao\implementation\UserRoleDaoImp$COLUMN.class
 com\hohulia\cinema\dao\interfaces\UserInterface.class
 com\hohulia\cinema\services\MovieService.class
+com\hohulia\cinema\dao\interfaces\SqlTransaction.class
 com\hohulia\cinema\dao\interfaces\CinemaHallInterface.class
 com\hohulia\cinema\exceptions\CredentialsException.class
 com\hohulia\cinema\utilities\ImgPaths.class

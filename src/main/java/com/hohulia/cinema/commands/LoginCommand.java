@@ -12,13 +12,10 @@ public class LoginCommand implements ICommand{
 
     private final UserService userService = ServiceFactory.getUserService();
 
-    private static final String MAIN = "/index.jsp";
-    private static final String ERROR = "!/error";
-    private static final String SINGUP = "/singup";
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         if ("GET".equals(request.getMethod())) {
-            return "/login.jsp";
+            return "/WEB-INF/login.jsp";
         }
         else {
             try {
@@ -30,7 +27,7 @@ public class LoginCommand implements ICommand{
             }
             catch (ServiceException e) {
                 request.setAttribute("error", e.getMessage());
-                return "/login.jsp";
+                return "/WEB-INF/login.jsp";
             }
         }
     }

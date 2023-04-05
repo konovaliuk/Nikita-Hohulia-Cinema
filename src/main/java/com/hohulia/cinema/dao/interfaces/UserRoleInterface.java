@@ -13,8 +13,6 @@ public interface UserRoleInterface {
     void deleteById(long id);
     void addUserRole (UserRole userRole);
     void updateByUserId(long id, int roleId);
-    void beginTransaction() throws SQLException;
-    void endTransaction() throws SQLException;
-    void rollbackTransaction() throws SQLException;
+
 
 }

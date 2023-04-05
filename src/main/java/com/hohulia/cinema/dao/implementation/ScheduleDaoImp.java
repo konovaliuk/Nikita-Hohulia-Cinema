@@ -166,6 +166,7 @@ public class ScheduleDaoImp implements ScheduleInterface {
 
             System.out.println(stmt.toString());
 
+
             try (ResultSet resultSet = stmt.executeQuery()) {
                 while (resultSet.next()) {
                     Schedule schedule = getSchedule(resultSet);

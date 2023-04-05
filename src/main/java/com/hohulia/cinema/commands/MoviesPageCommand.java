@@ -15,43 +15,25 @@ import java.util.Map;
 public class MoviesPageCommand implements ICommand{
     private final MovieService movieService = ServiceFactory.getMovieService();
 
-    private static final String FILMS = "/films.jsp";
-    private static final String ERROR = "!/error";
-
     @Override
     public String execute(HttpServletRequest request, HttpServletResponse response) {
 
-        List<Movie> moviesForPage;
-        int pageNumber = 1; // default to first page
-        int pageSize = Constants.PAGE_SIZE; // default to 6 movies per page
-        int totalPages = 1;
-
-        String pageNumberParam = request.getParameter("page");
-        System.out.println("MoviePageCommand; String page="+pageNumberParam);
-
-        if (pageNumberParam != null) {
-            pageNumber = Integer.parseInt(pageNumberParam);
-        }
-        System.out.println("MoviePageCommand; int page="+pageNumber);
-
         try {
-            moviesForPage = movieService.getMovies(pageNumber, pageSize);
-            totalPages = (int) Math.ceil((double) movieService.getMoviesCount() / pageSize) ;
-        }catch(ServiceException e) {
-            return ERROR;
+            String pageNumberParam = request.getParameter("page");
+            List<Movie> moviesForPage = movieService.getMovies(pageNumberParam);
+            int totalPages = movieService.getTotalPages();
+            Map<String, String> paths = ImgPaths.getImgPaths(moviesForPage);
+
+            // Pass the moviesForPage list to your JSP for rendering
+            request.setAttribute("movies", moviesForPage);
+            request.setAttribute("currentPage", pageNumberParam);
+            request.setAttribute("totalPages", totalPages);
+            request.setAttribute("paths", paths);
+            return "/WEB-INF/films.jsp";
+        } catch (ServiceException e){
+            request.setAttribute("error", e.getMessage());
+            return "!/login";
         }
-
-        Map<String, String> paths = ImgPaths.getImgPaths(moviesForPage);
-
-        for (Movie movie: moviesForPage)
-            System.out.println(movie);
-
-        // Pass the moviesForPage list to your JSP for rendering
-        request.setAttribute("movies", moviesForPage);
-        request.setAttribute("currentPage", pageNumber);
-        request.setAttribute("totalPages", totalPages);
-        request.setAttribute("paths", paths);
-        return FILMS;
 
     }
 }

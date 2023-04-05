@@ -5,65 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f04801a-f4a6-4e0f-9782-d0a961a1c4b8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/implementation/MovieDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/implementation/MovieDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/implementation/UserDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/implementation/UserDaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/AuthorizePaymentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/AuthorizePaymentCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/BookingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/BookingCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/CheckoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/CheckoutCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/ExecutePaymentCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/ExecutePaymentCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/LoginCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/LoginCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/LogoutCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/LogoutCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/MainPageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/MainPageCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/MissingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/MissingCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/MoviesPageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/MoviesPageCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/ShowCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/ShowCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/SignUpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/commands/SignUpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/implementation/ScheduleDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/implementation/ScheduleDaoImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/implementation/UserRoleDaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/implementation/UserRoleDaoImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/BookingInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/BookingInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/MovieInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/MovieInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/ScheduleInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/ScheduleInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/SeatInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/SeatInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/UserRoleInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/dao/interfaces/UserRoleInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/entities/Schedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/entities/Schedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/entities/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/entities/Seat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/ulilities/Hash.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/connection/DBCPDataSource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/connection/DBCPDataSource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/daoFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/implementation/UserDaoImp$COLUMN.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/implementation/UserDaoImp$COLUMN.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/implementation/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/implementation/UserDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/BookingInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/BookingInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/MovieInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/MovieInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/ScheduleInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/ScheduleInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/SeatInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/SeatInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/UserInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/UserRoleInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/dao/interfaces/UserRoleInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Booking.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Booking.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/CinemaHall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/CinemaHall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Movie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Payment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Schedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/Seat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/entities/UserRole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/WEB-INF/classes/com/hohulia/cinema/runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Cinema/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Cinema/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/MovieDaoImp$COLUMN.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/MovieDaoImp$COLUMN.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/MovieDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/MovieDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/UserDaoImp$COLUMN.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/UserDaoImp$COLUMN.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/UserDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/UserDaoImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/CheckoutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/CheckoutService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/ScheduleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/ScheduleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/utilities/ImgPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hohulia/cinema/utilities/ImgPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/booking.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/booking.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/checkout.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/checkout.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/films.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/films.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pError.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/pError.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/receipt.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/receipt.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/review.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/review.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/shows.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/shows.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/signup.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/signup.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/AuthorizePaymentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/AuthorizePaymentCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/BookingCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/BookingCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/CheckoutCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/CheckoutCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/ExecutePaymentCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/ExecutePaymentCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/LoginCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/LoginCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/LogoutCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/LogoutCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/MainPageCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/MainPageCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/MissingCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/MissingCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/MoviesPageCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/MoviesPageCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/ShowCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/ShowCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/SignUpCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/commands/SignUpCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/ScheduleDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/ScheduleDaoImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/UserRoleDaoImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/implementation/UserRoleDaoImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/BookingInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/BookingInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/MovieInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/MovieInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/ScheduleInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/ScheduleInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/SeatInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/SeatInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/UserInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/UserInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/UserRoleInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/dao/interfaces/UserRoleInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/entities/Schedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/entities/Schedule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/entities/Seat.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/entities/Seat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/ulilities/Hash.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/services/BookingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/services/BookingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/services/MovieService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/services/MovieService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/services/ScheduleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/services/ScheduleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/utilities/ImgPaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hohulia/cinema/utilities/ImgPaths.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/logs/access_log.2023-04-04" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/logs/access_log.2023-04-04" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/Cinema/org/apache/jsp/shows_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/tomcat/work/Tomcat/localhost/Cinema/org/apache/jsp/shows_jsp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +123,8 @@
       <recent name="C:\dev\Java\Cinema\src\main\webapp\WEB-INF\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\Java\Cinema\src\main\java\com\hohulia\cinema" />
+      <recent name="C:\dev\Java\Cinema\src\main\webapp\WEB-INF" />
       <recent name="C:\dev\Java\Cinema\src\main\webapp" />
     </key>
   </component>

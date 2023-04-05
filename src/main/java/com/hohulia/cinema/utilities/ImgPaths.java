@@ -3,10 +3,7 @@ package com.hohulia.cinema.utilities;
 import com.hohulia.cinema.commands.*;
 import com.hohulia.cinema.entities.Movie;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ImgPaths {
 
@@ -21,6 +18,18 @@ public class ImgPaths {
             String path = getImgPath(movie);
             paths.put(movie.getTitle(), path);
         }
+        return paths;
+    }
+
+    public static Map<String, String> getImgPaths(ArrayList<List<Movie>> movies) {
+        Map<String, String> paths = new HashMap<>();
+        for (List<Movie> list:movies){
+            for (Movie movie : list) {
+                String path = getImgPath(movie);
+                paths.put(movie.getTitle(), path);
+            }
+        }
+
         return paths;
     }
 }

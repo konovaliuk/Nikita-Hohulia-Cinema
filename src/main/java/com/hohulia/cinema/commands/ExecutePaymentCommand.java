@@ -16,7 +16,6 @@ public class ExecutePaymentCommand implements ICommand{
     public String execute(HttpServletRequest request, HttpServletResponse response) {
         String paymentId = request.getParameter("paymentId");
         String payerId = request.getParameter("PayerID");
-        System.out.println("PaymentId: "+ paymentId + "  PayerId: "+ payerId);
         try {
             PaymentService paymentServices = new PaymentService();
             Payment payment = paymentServices.executePayment(paymentId, payerId);
@@ -27,12 +26,12 @@ public class ExecutePaymentCommand implements ICommand{
             request.setAttribute("payer", payerInfo);
             request.setAttribute("transaction", transaction);
 
-            return "receipt.jsp";
+            return "/WEB-INF/receipt.jsp";
 
         } catch (PayPalRESTException ex) {
             request.setAttribute("errorMessage", ex.getMessage());
             ex.printStackTrace();
-            return "/pError";
+            return "/WEB-INF/pError.jsp";
         }
     }
 }

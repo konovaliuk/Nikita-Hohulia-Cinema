@@ -21,6 +21,8 @@ public class ControllerHelper {
         commands.put("/Cinema/checkout", new CheckoutCommand());
         commands.put("/Cinema/authorize_payment", new AuthorizePaymentCommand());
         commands.put("/Cinema/execute_payment", new ExecutePaymentCommand());
+        commands.put("/Cinema/review_payment", new ReviewPaymentCommand());
+        commands.put("/Cinema/my-tickets", new MyTicketsCommand());
     }
 
     public ICommand getCommand(HttpServletRequest req) {

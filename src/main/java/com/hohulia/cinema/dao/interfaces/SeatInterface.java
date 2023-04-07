@@ -12,7 +12,5 @@ public interface SeatInterface {
     void addSeat(Seat seat);
     void addSeat(List <Seat> seats);
     void deleteByBookingId(long id);
-    void beginTransaction() throws SQLException;
-    void endTransaction() throws SQLException;
-    void rollbackTransaction() throws SQLException;
+
 }

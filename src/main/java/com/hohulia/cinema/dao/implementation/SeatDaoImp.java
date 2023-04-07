@@ -43,20 +43,6 @@ public class SeatDaoImp implements SeatInterface {
         return new Seat(seatId, row, number, bookingId, seatPrice, showId);
     }
 
-    @Override
-    public void beginTransaction() throws SQLException {
-        connection.setAutoCommit(false);
-    }
-    @Override
-    public void endTransaction() throws SQLException {
-        connection.commit();
-        connection.setAutoCommit(true);
-    }
-    @Override
-    public void rollbackTransaction() throws SQLException {
-        connection.rollback();
-        connection.setAutoCommit(true);
-    }
 
     @Override
     public List<Seat> findByBookingId(long id) {

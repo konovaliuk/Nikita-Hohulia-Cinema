@@ -9,6 +9,8 @@
 
 
 </head>
+    <%@ include file="header.html" %>
+    <%@ include file="navbar.html"%>
 <body>
     <div class="d-flex flex-column">
         <%@ include file="./header.html" %>
@@ -16,6 +18,6 @@
             <img src="./img/error.png" alt="error">
         </div>
     </div>
-
+    <%@ include file="footer.html"%>
 </body>
 </html>

@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 
 
 
-@WebServlet(name="Controller", urlPatterns = {"/home", "/signup", "/login", "/error", "/logout", "/movies", "/show", "/booking", "/checkout", "/authorize_payment", "/execute_payment"})
+@WebServlet(name="Controller", urlPatterns = {"/home", "/signup", "/login", "/error", "/logout", "/movies", "/show", "/booking", "/checkout", "/authorize_payment", "/execute_payment", "/review_payment", "/my-tickets"})
 public class Controller extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {

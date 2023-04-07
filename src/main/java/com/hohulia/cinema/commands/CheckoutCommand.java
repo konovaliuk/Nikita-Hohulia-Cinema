@@ -24,6 +24,7 @@ public class CheckoutCommand implements ICommand {
             String[] sSelectedSeats = request.getParameterValues("selectedSeats"); //row-number-price
             double[][] selectedSeat = checkoutService.getSelectedSeats(sSelectedSeats);
             double amount = checkoutService.getSelectedSeatsAmount(selectedSeat);
+            System.out.println(Arrays.deepToString(selectedSeat));
 
             request.getSession().setAttribute("seatsSelected", selectedSeat);
             request.getSession().setAttribute("seatsString", selectedSeat.length);

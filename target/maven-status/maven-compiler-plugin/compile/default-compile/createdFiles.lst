@@ -20,6 +20,7 @@ com\hohulia\cinema\services\models\OrderDetail.class
 com\hohulia\cinema\dao\implementation\UserDaoImp$COLUMN.class
 com\hohulia\cinema\dao\implementation\MovieDaoImp.class
 com\hohulia\cinema\utilities\Utils.class
+com\hohulia\cinema\commands\ReviewPaymentCommand.class
 com\hohulia\cinema\dao\implementation\ScheduleDaoImp.class
 com\hohulia\cinema\dao\implementation\RoleDaoImp.class
 com\hohulia\cinema\commands\ExecutePaymentCommand.class
@@ -43,6 +44,7 @@ com\hohulia\cinema\controller\Controller.class
 com\hohulia\cinema\dao\implementation\RoleDaoImp$COLUMN.class
 com\hohulia\cinema\dao\interfaces\MovieInterface.class
 com\hohulia\cinema\entities\CinemaHall.class
+com\hohulia\cinema\commands\MyTicketsCommand.class
 com\hohulia\cinema\commands\LoginCommand.class
 com\hohulia\cinema\services\ServiceFactory.class
 com\hohulia\cinema\services\PaymentService.class

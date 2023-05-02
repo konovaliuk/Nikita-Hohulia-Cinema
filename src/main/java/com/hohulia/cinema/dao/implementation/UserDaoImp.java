@@ -2,7 +2,6 @@ package com.hohulia.cinema.dao.implementation;
 
 import com.hohulia.cinema.dao.interfaces.UserInterface;
 import com.hohulia.cinema.entities.User;
-import com.hohulia.cinema.exceptions.ServiceException;
 import com.hohulia.cinema.utilities.Utils;
 
 import java.sql.Connection;

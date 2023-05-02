@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpbDataSourceConfig">
+    <data-sources>
+      <data-source id="9760a0f9-7c2d-46de-87af-73b9fc7d0263" name="Cinema" url="jdbc:mysql://localhost/Cinema?useUnicode=true&amp;serverTimezone=UTC&amp;useSSL=false" driverClass="com.mysql.cj.jdbc.Driver" />
+    </data-sources>
+  </component>
+</project>

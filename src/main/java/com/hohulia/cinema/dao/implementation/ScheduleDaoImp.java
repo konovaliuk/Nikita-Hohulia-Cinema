@@ -140,8 +140,6 @@ public class ScheduleDaoImp implements ScheduleInterface {
             stmt.setTimestamp(1, start);
             stmt.setTimestamp(2, end);
 
-            System.out.println(stmt.toString());
-
             try (ResultSet resultSet = stmt.executeQuery()) {
                 while (resultSet.next()) {
                     Schedule schedule = getSchedule(resultSet);
@@ -163,8 +161,6 @@ public class ScheduleDaoImp implements ScheduleInterface {
             stmt.setTimestamp(1, start);
             stmt.setTimestamp(2, end);
             stmt.setInt(3, id);
-
-            System.out.println(stmt.toString());
 
 
             try (ResultSet resultSet = stmt.executeQuery()) {

@@ -1,7 +1,6 @@
 package com.hohulia.cinema.dao.interfaces;
 
 import com.hohulia.cinema.entities.*;
-import com.hohulia.cinema.exceptions.ServiceException;
 
 import java.sql.SQLException;
 import java.util.List;

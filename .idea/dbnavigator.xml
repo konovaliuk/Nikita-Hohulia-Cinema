@@ -12,7 +12,7 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="d4a2f47a-7363-4018-89bf-a33d29f4bf34">
+    <connection id="03086d2a-e879-4cf2-aa47-bf298315913d">
       <console name="Connection" type="STANDARD" schema="mysql" session="Main" />
     </connection>
   </component>
@@ -22,22 +22,13 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
-  <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="d4a2f47a-7363-4018-89bf-a33d29f4bf34" dataset="cinema.booking" active-filter-id="" />
-  </component>
-  <component name="DBNavigator.Project.ExecutionManager">
-    <retain-sticky-names value="false" />
-  </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
-  <component name="DBNavigator.Project.ParserDiagnosticsManager">
-    <diagnostics-history />
-  </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="d4a2f47a-7363-4018-89bf-a33d29f4bf34" active="true" signed="true">
+      <connection id="03086d2a-e879-4cf2-aa47-bf298315913d" active="true" signed="true">
         <database>
           <name value="Connection" />
           <description value="" />

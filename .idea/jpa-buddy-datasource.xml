@@ -2,7 +2,7 @@
 <project version="4">
   <component name="JpbDataSourceConfig">
     <data-sources>
-      <data-source id="9760a0f9-7c2d-46de-87af-73b9fc7d0263" name="Cinema" url="jdbc:mysql://localhost/Cinema?useUnicode=true&amp;serverTimezone=UTC&amp;useSSL=false" driverClass="com.mysql.cj.jdbc.Driver" />
+      <data-source id="52bde004-9352-4560-97c9-54db2dc6f56c" name="Cinema" url="jdbc:mysql://localhost/Cinema?useSSL=false&amp;allowMultiQueries=true&amp;serverTimezone=UTC" driverClass="com.mysql.cj.jdbc.Driver" />
     </data-sources>
   </component>
 </project>

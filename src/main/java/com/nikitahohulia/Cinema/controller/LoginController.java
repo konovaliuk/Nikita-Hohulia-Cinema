@@ -1,5 +1,6 @@
 package com.nikitahohulia.Cinema.controller;
 
+
 import com.nikitahohulia.Cinema.entities.User;
 import com.nikitahohulia.Cinema.entities.UserRole;
 import com.nikitahohulia.Cinema.services.UserService;
@@ -7,7 +8,6 @@ import jakarta.servlet.http.HttpSession;
 import lombok.AllArgsConstructor;
 import org.hibernate.service.spi.ServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -34,7 +34,6 @@ public class LoginController {
     @PostMapping("/login")
     public String postLogin(@ModelAttribute("user") User theUser, Model theModel){
         try {
-            System.out.println(theUser);
             User user = userService.signInUser(theUser);
             List <UserRole> roles = userService.getRoles(user);
             httpSession.setAttribute("currentUser", user);

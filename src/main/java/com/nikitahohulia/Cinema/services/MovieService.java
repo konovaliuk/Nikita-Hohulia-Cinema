@@ -41,10 +41,7 @@ public class MovieService {
         pageNumber--;
         Pageable pageable = PageRequest.of(pageNumber, pageSize);
         Page<Movie> moviePage = movieRepository.findAll(pageable);
-        List<Movie> movies = moviePage.getContent();
-        System.out.println(movies);
-        //List<Movie> movies = movieRepository.findAll();
-        return movies;
+        return moviePage.getContent();
     }
 
     public long getMoviesCount() throws ServiceException {

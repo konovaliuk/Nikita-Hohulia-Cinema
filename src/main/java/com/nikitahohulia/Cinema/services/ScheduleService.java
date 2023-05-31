@@ -59,9 +59,6 @@ public class ScheduleService {
         schedule.add(getScheduleWithOffset(movieId, 0, 1));
         schedule.add(getScheduleWithOffset(movieId, 1, 1));
         schedule.add(getScheduleWithOffset(movieId, 2, 1));
-        System.out.println("getNearestShows");
-        System.out.println(schedule);
-        System.out.println("\n\n\n\n\n\n");
         return schedule;
     }
 

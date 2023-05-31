@@ -1,10 +1,7 @@
 package com.nikitahohulia.Cinema.utils;
 
-import java.sql.Timestamp;
-import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.TimeZone;
 
 public class TimeConvertor {
